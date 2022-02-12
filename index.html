@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+
+  }
+</style>
+</head>
+<body>
+  <main >
+      <section class="cursor-pointer mt-8 flex justify-center items-center ">  
+        <form class="" name="calc" action="">
+            <input class="value text-center py-6  px-32 text-white bg-transparent text-5xl" type="text" name="txt" id=""> 
+        <div class=" grid grid-cols-5 text-5xl gap-1 text-white ">
+          
+            <span id="removed" class="grid col-span-2  justify-center pb-1  bg-teal-200" onclick="document.calc.txt.value = ''">Ac</span>
+            <span class="nones text-black	text-center" onclick="document.calc.txt.value = document.calc.txt.value.slice(0, -1)" value="DEL"">DEL</span>
+            <span class="nones text-black	text-center" onclick="document.calc.txt.value += '/'">/</span>
+
+            <span class="nones text-black	text-center" onclick="document.calc.txt.value += '*'">*</span>
+            
+            <span class="	text-center" onclick="document.calc.txt.value += '6'">6</span>
+
+            <span class="	text-center" onclick="document.calc.txt.value += '7'">7</span>
+
+
+            <span class="	text-center" onclick="document.calc.txt.value += '8'">8</span>
+            
+
+            <span  class="	text-center" onclick="document.calc.txt.value += '9'">9</span>
+            
+            
+            
+          
+           
+           
+            
+            <span class="row-span-2 grid items-center justify-center nones text-black	" onclick="document.calc.txt.value += '+'">+</span>
+
+           
+            
+           
+            
+            
+            
+            
+          
+           
+
+          
+            
+            
+            <span class="	text-center" onclick="document.calc.txt.value += '2'">2</span>
+
+            <span class="	text-center" onclick="document.calc.txt.value += '3'">3</span>
+
+           
+            
+          
+
+            <!-- <span class="	text-center" onclick="document.calc.txt.value += '00'"></span> -->
+            <span class="	text-center" onclick="document.calc.txt.value += '4'">4</span> 
+
+            
+
+            <span class="	text-center" onclick="document.calc.txt.value += '5'">5</span>
+
+            
+
+            
+           
+
+            <span class="nones text-black	text-center" onclick="document.calc.txt.value += '%'">%</span>
+            
+           
+
+           
+
+           
+
+
+            <span class="nones text-black text-4xl	text-center" onclick="document.calc.txt.value += '('">.</span>
+
+            
+
+            <span class="	text-center" onclick="document.calc.txt.value += '0'">0</span>
+
+           
+            
+           
+            <span class="	text-center" onclick="document.calc.txt.value += '1'">1</span>
+
+            <span class="nones text-black	text-center" onclick="document.calc.txt.value += '-'">-</span>  
+
+            <div class=" text-4xl grid items-center justify-center nones text-black">
+                <span class=" items-center flex " onclick="document.calc.txt.value += '.'">(</span>
+            </div>
+
+            <span class="nones text-black text-4xl	 text-center" onclick="document.calc.txt.value += ')'">)</span>
+
+            <span class=" text-white text-4xl	 text-center" onclick="document.calc.txt.value += '00'">00</span>
+
+            <span class="nones text-black grid col-span-2	text-center" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+            
+           </form>
+         
+           
+          </div>
+      </section>
+  </main>
+    <script src="index.js"></script>
+</body>
+</html>
